@@ -1,0 +1,49 @@
+footer {
+  height: auto;
+  width: 100%;
+  background-color: black;
+}
+footer .wrap {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 7fr 3fr;
+  grid-template-rows: auto;
+  padding: 20px;
+  grid-gap: 10px;
+}
+footer .wrap h2 {
+  grid-column: 1;
+  grid-row: 1;
+  background-image: url(../img/logov.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0;
+  margin: 8px;
+}
+footer .wrap ul {
+  
+}
+footer .wrap ul li {
+  display: flex;
+}
+footer .wrap ul li h3 { 
+  line-height: 2;
+  font-size: 16px;
+  font-weight: 300;
+  width: 230px;
+}
+footer .wrap ul li p {
+  line-height: 2;
+  font-size: 16px;
+  font-weight: 300;
+}
+footer .wrap ul li p::before{
+  content: "";
+  height: 11px;
+  display: inline-block;
+  border-left: 1px solid gray;
+  padding-left: 20px;
+}
+footer .wrap p.copyright {
+  padding-top: 8px;
+}

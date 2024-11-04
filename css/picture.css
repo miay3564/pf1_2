@@ -1,0 +1,39 @@
+#main4 {
+  a: a;
+}
+#main4 > a {
+  a: a;
+}
+#main4 > a img {
+  a: a;
+}
+#main4 div.wrap {
+  a: a;
+}
+#main4 div.wrap h2 {
+  a: a;
+}
+#main4 div.wrap h3 {
+  a: a;
+}
+#main4 div.wrap h3 span {
+  a: a;
+}
+#main4 div.wrap p.p1 {
+  a: a;
+}
+#main4 div.wrap p.p1 span {
+  a: a;
+}
+#main4 div.wrap p.p2 {
+  a: a;
+}
+#main4 div.wrap p.p2 span {
+  a: a;
+}
+#main4 div.wrap p.p3 {
+  a: a;
+}
+#main4 div.wrap p.p3 a {
+  a: a;
+}
