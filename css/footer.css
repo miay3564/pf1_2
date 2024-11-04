@@ -1,246 +1,49 @@
 footer {
   height: auto;
-  background-color: #eee;
-  border-top: 1px solid;
+  width: 100%;
+  background-color: black;
 }
-footer div.wrap {
+footer .wrap {
+  color: white;
   display: grid;
-  grid-template-columns: auto 2fr 1fr;
-  grid-template-rows: auto auto auto auto 50px auto;
-  padding-bottom: 60px;
-  align-items: center;
-  padding-left: calc((100% - 1440px) / 2);
-  padding-right: calc((100% - 1440px) / 2);
+  grid-template-columns: 1fr 7fr 3fr;
+  grid-template-rows: auto;
+  padding: 20px;
+  grid-gap: 10px;
 }
-footer div.wrap h1.h5T {
+footer .wrap h2 {
   grid-column: 1;
-  grid-row: 2;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-footer div.wrap h1.h5T a{
-  
-}
-footer div.wrap h2.h6T {
-  grid-column: 2;
-  grid-row: 2;
-  margin-bottom: 25px;
-  margin-top: 40px;
-  display: flex;
-  height: 30px;
-  margin-left: 5px;
-}
-footer div.wrap ul.fnb {
-  grid-column: 1 / span 2;
   grid-row: 1;
-  display: flex;
-  background-color: white;
-  border-bottom: 1px solid;
-  /*! margin-left: calc((100% - 1440px) / 2 ); */
-  position: relative;
-}
-footer div.wrap ul.fnb::after{
- content: ""; 
- display: block;
- width: calc(100vw - 8px);
- border-bottom: 1px solid #b1b1b1;
- position: absolute;
- bottom: -1px;
- left: calc((100vw - 1440px) / -2);
- height: 100%;
- background-color: white;
- border-top: 1px solid #b1b1b1;
-}
-footer div.wrap ul.fnb li {
-  z-index: 1;
-}
-footer div.wrap ul.fnb li a {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  position: relative;
-}
-footer div.wrap ul.fnb li:not(:nth-child(1)):not(:last-child) a::before{
-  content: "";
-  border-right: 1px solid #ccc;
-  height: 10px;
-  position: absolute;
-  left: 0;
-  top: calc(50% - 3px);
-}
-footer div.wrap ul.fnb li:nth-child(n+7) a::after{
-  content: "";
-  background-image: url(../img/open.svg);
-  width: 20px;
-  height: 20px;
-  background-position: center;
+  background-image: url(../img/logov.png);
   background-repeat: no-repeat;
   background-size: contain;
-  transform: translateY(1px) translateX(3px);
-}
-footer div.wrap ul.sns {
-  grid-column: 3;
-  grid-row: 1;
-  display: flex;
-  justify-content: end;
-  z-index: 1;
-  gap: 14px;
-  align-items: center;
-}
-footer div.wrap ul.sns li {
-  
-}
-footer div.wrap ul.sns li a {
-  height: 32px;
-  display: flex;
-  align-items: center;
   font-size: 0;
-  width: 32px;
+  margin: 8px;
 }
-footer div.wrap ul.sns li:nth-child(1){
-  background-image: url(../img/icon.png);
-  background-position: -51px -13.1px;
-  background-size: 300px;
-  background-repeat: no-repeat;
-}
-footer div.wrap ul.sns li:nth-child(2){
-  background-image: url(../img/icon.png);
-  background-position: -93px -13.1px;
-  background-size: 300px;
-  background-repeat: no-repeat;
-}
-footer div.wrap ul.sns li:nth-child(3){
-  background-image: url(../img/icon.png);
-  background-position: -135px -13.1px;
-  background-size: 300px;
-  background-repeat: no-repeat;
-}
-footer div.wrap ul.sns li:nth-child(4){
-  background-image: url(../img/icon.png);
-  background-position: -177.5px -13.1px;
-  background-size: 300px;
-  background-repeat: no-repeat;
-}
-footer div.wrap ul.sns li:nth-child(5){
-  background-image: url(../img/icon.png);
-  background-position: -219.5px -13.1px;
-  background-size: 300px;
-  background-repeat: no-repeat;
-}
-footer div.wrap ul.sns li:nth-child(6){
-  background-image: url(../img/icon.png);
-  background-position: -261.5px -13.1px;
-  background-size: 300px;
-  background-repeat: no-repeat;
-}
-footer div.wrap address {
-  grid-column: 1 / span 2;
-  grid-row: 3;
-  font-style: normal;
-  align-self: flex-start;
-  line-height: 2;
-}
-footer div.wrap address span {
+footer .wrap ul {
   
 }
-footer div.wrap ul.email {
-  grid-column: 3;
-  grid-row: 3 / span 2;
-  justify-self: end;
+footer .wrap ul li {
+  display: flex;
 }
-footer div.wrap ul.email li {  
-  display: grid;
-  grid-template-columns: 140px 3fr;
-  align-items: center;
-}
-footer div.wrap ul.email li a {
+footer .wrap ul li h3 { 
   line-height: 2;
+  font-size: 16px;
+  font-weight: 300;
+  width: 230px;
 }
-footer div.wrap p.money {
-  grid-column: 1 / span 3;
-  grid-row: 4;
-  margin-top: 7px;
+footer .wrap ul li p {
+  line-height: 2;
+  font-size: 16px;
+  font-weight: 300;
 }
-footer div.wrap ul.award {
-  grid-column: 1 / span 3;
-  grid-row: 5;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  margin: 40px 0;
+footer .wrap ul li p::before{
+  content: "";
+  height: 11px;
+  display: inline-block;
+  border-left: 1px solid gray;
+  padding-left: 20px;
 }
-footer div.wrap ul.award li:nth-child(1){
-  background-image: url(../img/btn_award.jpg);
-  width: 190px;
-  height: 60px;
-  background-repeat: no-repeat;
-  display: block;
-  width: 195px !important;
-  margin: 40px 0;
-}
-footer div.wrap ul.award li:nth-child(2){
-  background-image: url(../img/btn_award.jpg);
-  width: 190px;
-  height: 60px;
-  background-repeat: no-repeat;
-  display: block;
-  background-position: -205px 0px;
-  margin: 40px 0;
-}
-footer div.wrap ul.award li:nth-child(3){
-  background-image: url(../img/btn_award.jpg);
-  width: 190px;
-  height: 60px;
-  background-repeat: no-repeat;
-  display: block;
-  width: 190px !important;
-  background-position: -405px 0px;
-  margin: 40px 0;
-}
-footer div.wrap ul.award li:nth-child(4){
-  background-image: url(../img/btn_award.jpg);
-  width: 190px;
-  height: 60px;
-  background-repeat: no-repeat;
-  display: block;
-  width: 190px !important;
-  background-position: -605px 0px;
-  margin: 40px 0;
-}
-footer div.wrap ul.award li:nth-child(5){
-  background-image: url(../img/btn_award.jpg);
-  width: 190px;
-  height: 60px;
-  background-repeat: no-repeat;
-  display: block;
-  width: 190px !important;
-  background-position: -805px 0px;
-  margin: 40px 0;
-}
-footer div.wrap ul.award li:nth-child(6){
-  background-image: url(../img/btn_award.jpg);
-  width: 190px;
-  height: 60px;
-  background-repeat: no-repeat;
-  display: block;
-  width: 190px !important;
-  background-position: -1005px 0px;
-  margin: 40px 0;
-}
-footer div.wrap ul.award li {
-  
-}
-footer div.wrap ul.award li a {
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  display: flex;
-  opacity: 0;
-}
-footer div.wrap p.copyright {
-  grid-column: 1 / span 3;
-  grid-row: 6;
-  margin-top: 80px;
+footer .wrap p.copyright {
+  padding-top: 8px;
 }
