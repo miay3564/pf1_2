@@ -3,52 +3,67 @@ main{
   height: auto;
 }
 section#main1 {
+  background-color: #f3f3f3;
+  height: 100%;
+}
+#main1 > .wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+section#main1 > .wrap .m1{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   min-height: 800px;
-  background-color: #f3f3f3;
+  max-width: 1800px;
+  padding-top: 130px;
+  box-sizing: border-box;
 }
-section#main1 img {
+section#main1 > .wrap .m1 img {
   height: 680px;
-  padding: 0 40px 0 0px;
+  padding-right: 40px;
   border-right: 1px solid #ccc;
-  margin-top: 130px;
-  margin-left: -205px;
+  width: 770px;
+  position: absolute;
+  left: 58px;
 }
-section#main1 div.wrap {
-  padding-left: 100px;
-  margin-top: 100px;
+section#main1 > .wrap div.m2 {
+  position: absolute;
+  right: 17%;
+  padding-top: 60px;
 }
 .block{
   display: block;
 }
-section#main1 div.wrap h2 {
+section#main1 > .wrap div.m2 h2 {
   font-size: 30px;
-  line-height: 5;
+  line-height: 4;
 }
-section#main1 div.wrap h3 {
-  font-size: 50px;
+section#main1 > .wrap div.m2 h3 {
+  font-size: 45px;
   margin-bottom: 50px;
-  line-height: 50px;
+  line-height: 45px;
 }
-section#main1 div.wrap p.p1{
+section#main1 > .wrap div.m2 p.p1{
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 25px;
   line-height: 1.5;
 }
-section#main1 div.wrap p.p2 {
+section#main1 > .wrap div.m2 p.p2 {
   font-size: 16px;
   margin-bottom: 30px;
   font-weight: 400;
   line-height: 25px;
 }
-section#main1 div.wrap p.p2 a {
+section#main1 > .wrap div.m2 p.p2 a {
 
 }
-section#main1 div.wrap p.p3 a::before{ 
+section#main1 > .wrap div.m2 p.p3 a::before{ 
   content:"";
   display: inline-block;
   width: 8px;
@@ -58,10 +73,10 @@ section#main1 div.wrap p.p3 a::before{
   margin-right: 5px;
   transition: 0.5s;
 }
-section#main1 div.wrap p.p3 a:hover::before{
+section#main1 > .wrap div.m2 p.p3 a:hover::before{
   background-color: black;
 }
-section#main1 div.wrap p.p3 a{
+section#main1 > .wrap div.m2 p.p3 a{
   color: #7d7d7d;
 }
 /* 사진 */

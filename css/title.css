@@ -16,7 +16,7 @@ div#title h2{
 }
 div#title h2::before{
   content:"";
-  background-image: url(../img/vlogo.png);
+  background-image: url(../img/vlogo1.png);
   width: 165px;
   height: 150px;
   display: inline-block;
