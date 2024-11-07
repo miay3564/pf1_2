@@ -22,6 +22,8 @@ footer .wrap h2 {
 }
 footer .wrap ul {
   
+  grid-column: 2;
+  grid-row: 1;
 }
 footer .wrap ul li {
   display: flex;
@@ -46,4 +48,6 @@ footer .wrap ul li p::before{
 }
 footer .wrap p.copyright {
   padding-top: 8px;
+  grid-column: 3;
+  grid-row: 1;
 }
