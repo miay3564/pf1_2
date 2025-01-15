@@ -1,3 +1,7 @@
+header nav .ham{
+  display: block;
+  color: white;
+}
 /* 브랜드스토리 */
 main{
   height: auto;
@@ -5,15 +9,13 @@ main{
 section#main1 {
   background-color: #f3f3f3;
   height: 100%;
-}
-#main1 > .wrap{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   position: relative;
 }
-section#main1 > .wrap .m1{
+section#main1 .m1{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,47 +25,41 @@ section#main1 > .wrap .m1{
   padding-top: 130px;
   box-sizing: border-box;
 }
-section#main1 > .wrap .m1 img {
-  height: 680px;
+section#main1 .m1 img {
+  height: 670px;
   padding-right: 40px;
   border-right: 1px solid #ccc;
   width: 770px;
   position: absolute;
   left: 58px;
 }
-section#main1 > .wrap div.m2 {
+section#main1 div.m2 {
   position: absolute;
   right: 17%;
   padding-top: 60px;
 }
-.block{
-  display: block;
-}
-section#main1 > .wrap div.m2 h2 {
+section#main1 div.m2 h2 {
   font-size: 30px;
   line-height: 4;
 }
-section#main1 > .wrap div.m2 h3 {
+section#main1 div.m2 h3 {
   font-size: 45px;
   margin-bottom: 50px;
   line-height: 45px;
 }
-section#main1 > .wrap div.m2 p.p1{
+section#main1 div.m2 p.p1{
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 25px;
   line-height: 1.5;
 }
-section#main1 > .wrap div.m2 p.p2 {
+section#main1 div.m2 p.p2 {
   font-size: 16px;
   margin-bottom: 30px;
   font-weight: 400;
   line-height: 25px;
 }
-section#main1 > .wrap div.m2 p.p2 a {
-
-}
-section#main1 > .wrap div.m2 p.p3 a::before{ 
+section#main1 div.m2 p.p3 a::before{ 
   content:"";
   display: inline-block;
   width: 8px;
@@ -73,83 +69,55 @@ section#main1 > .wrap div.m2 p.p3 a::before{
   margin-right: 5px;
   transition: 0.5s;
 }
-section#main1 > .wrap div.m2 p.p3 a:hover::before{
+section#main1 div.m2 p.p3 a:hover::before{
   background-color: black;
 }
-section#main1 > .wrap div.m2 p.p3 a{
+section#main1 div.m2 p.p3 a{
   color: #7d7d7d;
 }
 /* 사진 */
 section#main2 {
   display: flex;
-  /*! justify-content: space-between; */
-  gap: 3%;
-  height: 100vh;
-}
-section#main2 div#m2a.wrap{
-
-}
-section#main2 div.wrap img{
-}
-section#main2 div#m2a.wrap img{
-  width: 97%;
+  justify-content: space-between;
   height: 100%;
 }
-section#main2 div#m2a.wrap p{
-  display: none;
-}
-section#main2 div#m2b.wrap{
-
-}
-section#main2 div#m2b.wrap img{
+section#main2 div img{
   width: 100%;
   height: 100%;
-  display: block;
-}
-section#main2 div#m2b.wrap p{
-  display: none;
 }
 /* 사진2 */
 #main3{
-
-  height: 100vh;
-}
-#main3 div.wrap{
   width: 100%;
   height: 100%;
 }
-#main3 div.wrap ul{
+#main3 ul{
+  height: 100%;
   display: flex;
   justify-content: space-around;
 }
-#main3 div.wrap ul li{
-  
+#main3 ul li{
+  width: calc(100% / 3);
+  height: 100%;
 }
-#main3 div.wrap ul li:nth-child(1){
+#main3 ul li:nth-child(1){
   background-image: url(../img/vmain3_1.jpg);
-  width: calc(100% / 3);
-  height: 100vh;
 }
-#main3 div.wrap ul li:nth-child(2){
+#main3 ul li:nth-child(2){
   background-image: url(../img/vmain3_2.jpg);
-  width: calc(100% / 3);
-  height: 100vh;
 }
-#main3 div.wrap ul li:nth-child(3){
+#main3 ul li:nth-child(3){
   background-image: url(../img/vmain3_3.jpg);
-  width: calc(100% / 3);
-  height: 100vh;
 }
-#main3 div.wrap ul li a{
+#main3 ul li a{
   transition: 1s;
   width: 100%;
   height: 100%;
   display: block;
 }
-#main3 div.wrap ul li a:hover{
+#main3 ul li a:hover{
   background-color: rgba(0, 0, 0, 0.4);
 }
-#main3 div.wrap ul li a h2{
+#main3 ul li a h2{
   color: #fff;
   font-size: 36px;
   display: flex;
@@ -159,15 +127,16 @@ section#main2 div#m2b.wrap p{
   opacity: 0;
   transition: 1s;
   font-weight: 400;
+  min-height: 900px;
 }
-#main3 div.wrap ul li h2:hover{
+#main3 ul li h2:hover{
   opacity: 1;
 }
 /* 커뮤니티 */
 #main4 {
   background-color: #f3f3f3;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
 }
 #main4 div.wrap {
@@ -190,26 +159,17 @@ section#main2 div#m2b.wrap p{
   margin-bottom: 35px;
   line-height: 1.2;
 }
-#main4 div.wrap h3 span {
-  
-}
 #main4 div.wrap p.p1 {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
   line-height: 2;
 }
-#main4 div.wrap p.p1 span {
-  
-}
 #main4 div.wrap p.p2 {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
   line-height: 2;
-}
-#main4 div.wrap p.p2 span {
-  
 }
 #main4 div.wrap p.p3 {
   font-size: 15px;
@@ -232,15 +192,8 @@ section#main2 div#m2b.wrap p{
   color: #7d7d7d;
 }
 #main4 div.image{
-  width: calc(100% - 410px);
-  display: flex;
-  justify-content: end;
-  align-items: end;
+  width: calc(100% - 468px);
   min-height: 500px;
-  margin-top: 160px;
-}
-#main4 div.image > a {
-  
 }
 #main4 div.image > a img {
   margin-top: 160px;
@@ -252,24 +205,22 @@ section#main2 div#m2b.wrap p{
 /* 비디오 */
 #main5 { 
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: block;
-}
-#main5 div.wrap { 
   position: relative;
 }
-#main5 div.wrap div.img {
+#main5 div.img {
   width: 100%;
   height: 100vh;
 }
-#main5 div.wrap div.img img { 
+#main5 div.img img { 
   width: 100%;
   height: 100%;
-  min-height: 700px;
+  min-height: 900px;
   object-fit: cover;
   object-position: center;
 }
-#main5 div.wrap div.icon {  
+#main5 div.icon {  
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -278,24 +229,19 @@ section#main2 div#m2b.wrap p{
   display: flex;
   justify-content: center;
 }
-#main5 div.wrap div.icon img {
-  
-}
 /* 예약문의 */
 #main6 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 #main6 div.img {  
-  background-image: url(../img/vmain6.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(../img/vmain6.jpg) no-repeat center /cover;
   width: 100%;
   height: 100%;
+  min-height: 900px;
 }
-#main6 div.wrap { 
+#main6 div.text { 
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -306,26 +252,21 @@ section#main2 div#m2b.wrap p{
   justify-content: center;
   align-items: center;
 }
-#main6 div.wrap p.o {
+#main6 div.text p.o {
   color: white;
   font-size: 32px;
   font-weight: 400;
   line-height: 1.6;
 }
-#main6 div.wrap p.o span {
-  
-}
-#main6 div.wrap p.a {
-  margin: 55px;
-}
-#main6 div.wrap p.a a {
+#main6 div.text a {
   color: white;
   font-size: 19px;
   font-weight: 300;
   border: 1px solid white;
   border-radius: 30px;
-  padding: 10px 45px;
+  padding: 20px 55px;
+  margin: 55px;
 }
-#main6 div.wrap p.a a:hover{
+#main6 div.text a:hover{
   background: #00bab3;
 }

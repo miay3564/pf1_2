@@ -1,0 +1,198 @@
+header{
+  background-color: #fff;
+}
+header nav{
+  border-bottom: 1px solid #ccc;
+}
+header nav .ham{
+  display: block;
+}
+header nav > ul > li > a{
+  color: #000;
+}
+main {
+  width: 100%;
+  height: auto;
+}
+main section#intro{
+  
+}
+main section#intro h2 {
+  padding-top: 260px;  
+  font-family: "Lora";
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  color: #000;
+}
+main section#intro > p { 
+  margin-top: 35px;
+  font-size: 22px;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 150px;
+}
+main section#intro #img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section#intro #img > img {
+  margin-bottom: 35px;
+}
+main section#intro #img .video {
+  display: flex;
+  gap: 35px;
+}
+main section#intro #img .video a {
+  
+}
+main section#intro #img .video a img {
+  
+}
+main section#intro #outline {
+  width: 1783px;
+  margin: 0 auto;
+}
+main section#intro #outline h3 {
+  margin-top: 85px;
+  font-size: 36px;
+  color: #000;
+}
+main section#intro #outline ul.total {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-between;
+}
+main section#intro #outline > ul.total > li {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: calc((100% - 90px) / 6);
+  height: 270px;
+}
+main section#intro #outline ul.total li h4 {
+  font-size: 18px;
+  color: #555;
+}
+main section#intro #outline ul.total li h4::before{
+  content: "";
+  display: block;
+  height: 23px;
+  background: no-repeat center /contain;
+  margin-bottom: 10px;
+}
+main section#intro #outline ul.total li:nth-child(1) h4::before{
+  width: 21px;
+  background-image: url(../img/intro_ico1.png);
+}
+main section#intro #outline ul.total li:nth-child(2) h4::before{
+  width: 23px;
+  background-image: url(../img/intro_ico2.png);
+}
+main section#intro #outline ul.total li:nth-child(3) h4::before{
+  width: 37px;
+  background-image: url(../img/intro_ico3.png);
+}
+main section#intro #outline ul.total li:nth-child(4) h4::before{
+  width: 24px;
+  background-image: url(../img/intro_ico4.png);
+}
+main section#intro #outline ul.total li:nth-child(5) h4::before{
+  width: 25px;
+  background-image: url(../img/intro_ico5.png);
+}
+main section#intro #outline ul.total li:nth-child(6) h4::before{
+  width: 28px;
+  background-image: url(../img/intro_ico6.png);
+}
+main section#intro #outline ul.total li p {
+  font-size: 16px;
+  color: #000;
+  line-height: 28px;
+  font-weight: 500;
+  margin-top: 25px;
+}
+main section#intro #outline > ul.total > li > ul.small {
+  margin-top: 25px;
+}
+main section#intro #outline ul.total li ul.small li {
+  color: #555;
+  padding-left: 12px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.4;
+}
+main section#intro #outline ul.total li ul.small li::before{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: 0;
+  top: 54%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #ccc;
+}
+main section#intro #outline .form {
+  width: 1783px;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 150px;
+}
+main section#intro #outline .form form {
+  width: 100%;
+}
+main section#intro #outline .form form table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+main section#intro #outline .form form table caption {
+  text-align: right;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+main section#intro #outline .form form table colgroup {
+  
+}
+main section#intro #outline .form form table colgroup col {
+  
+}
+main section#intro #outline .form form table thead {
+  background-color: #e5e5e5;
+  color: #555;
+}
+main section#intro #outline .form form table thead tr{
+  border: 1px solid #ccc;
+  padding: 12px 0;
+  font-size: 18px;
+  border-left: none;
+  border-right: none;
+}
+main section#intro #outline .form form table thead tr th {
+  border: 1px solid #ccc;
+  padding: 12px 0;
+  font-size: 18px;
+}
+main section#intro #outline .form form table tbody {
+  color: #555
+}
+main section#intro #outline .form form table tbody tr {
+  border: 1px solid #ccc;
+  padding: 12px 0;
+  font-size: 18px;
+}
+main section#intro #outline .form form table tbody tr.first{
+  font-weight: bold;
+}
+main section#intro #outline .form form table tbody tr td {
+  border: 1px solid #ccc;
+  padding: 12px 0;
+  font-size: 18px;
+}

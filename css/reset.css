@@ -17,3 +17,9 @@
     text-decoration: none;
     color:#222;
   }
+ol {
+  list-style: none;
+  counter-reset: item; /* 카운터 초기화 */
+  padding: 0;
+  margin: 0;
+}

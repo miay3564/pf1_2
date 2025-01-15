@@ -9,44 +9,30 @@ footer .wrap {
   grid-template-columns: 1fr 7fr 3fr;
   grid-template-rows: auto;
   padding: 20px;
-  grid-gap: 10px;
+  grid-gap: 40px;
 }
-footer .wrap h2 {
+footer .wrap p.footerlogo {
   grid-column: 1;
   grid-row: 1;
-  background-image: url(../img/logov.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  font-size: 0;
-  margin: 8px;
+  background: url(../img/logov.png) no-repeat top /contain;
 }
-footer .wrap ul {
-  
-  grid-column: 2;
-  grid-row: 1;
+footer .wrap address{
+  font-style: normal;
 }
-footer .wrap ul li {
-  display: flex;
+footer .wrap address p{
+  display: inline-block;
+  width: 20%;
+  margin-bottom: 10px;
+  border-right: 1px solid gray;
 }
-footer .wrap ul li h3 { 
-  line-height: 2;
-  font-size: 16px;
-  font-weight: 300;
-  width: 230px;
-}
-footer .wrap ul li p {
-  line-height: 2;
-  font-size: 16px;
-  font-weight: 300;
-}
-footer .wrap ul li p::before{
+address .wrap address::after{
   content: "";
   height: 11px;
-  display: inline-block;
+  display: block;
   border-left: 1px solid gray;
   padding-left: 20px;
 }
-footer .wrap p.copyright {
+footer .wrap p small {
   padding-top: 8px;
   grid-column: 3;
   grid-row: 1;
