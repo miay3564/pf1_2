@@ -10,6 +10,9 @@ body{
 .block{
     display: block;
 }
+.tac{
+    text-align: center;
+}
 .inline-block{
     display: inline-block;
     margin-left: 60px;

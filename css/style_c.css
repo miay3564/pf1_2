@@ -63,9 +63,6 @@ main section#customer ul{
     display: flex;
     justify-content: space-between;
 }
-main section#customer ul:first-child{
-    
-}
 main section#customer ul:last-child{
     margin-top: 20px;
 }
@@ -73,6 +70,7 @@ main section#customer ul li:first-of-type{
     width: fit-content;
     border-radius: 0px;
     padding: 0; 
+    border: none;
 }
 main section#customer ul li{
     border: 1px solid #ccc;
@@ -85,7 +83,11 @@ main section#customer ul li{
     height: 350px;
     justify-content: space-between;
 }
-main section#customer ul li img{
+main section#customer ul li:first-of-type a{
+    width: fit-content;
+    border: 1px solid #ccc;
+}
+main section#customer ul li a img{
     width: 1020px;
     height: 100%;
 }
